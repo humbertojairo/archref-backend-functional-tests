@@ -1,0 +1,17 @@
+##############################
+########  BUILD/RELEASE NAME #
+###############################
+name: $(Date:yyyyMMdd)$(Rev:.r)
+
+###########################
+########  CONN  REPO  #####
+###########################
+resources:
+  repositories:
+  - repository: pipelines
+    type: git
+    name: DevSecOps/_git/pipelines-manager
+    ref: 'refs/heads/master'
+
+extends:
+  template: resources/nodejs-backend-functional-test.yaml@pipelines

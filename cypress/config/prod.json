@@ -1,0 +1,7 @@
+{
+  "baseUrl": "http://www.aprendendotestar.com.br",
+  "env": {
+    "global_timeout": 100000,
+    "environment": "PROD"
+  }
+}

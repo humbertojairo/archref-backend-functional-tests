@@ -1,0 +1,70 @@
+{
+  "type": "object",
+  "title": "The root schema",
+  "description": "The root schema comprises the entire JSON document.",
+  "default": {},
+  "examples": [
+      {
+          "name": "Leonardo",
+          "job": "Programmer I",
+          "email": "example@email.com",
+          "id": "396",
+          "createdAt": "2020-11-10T19:07:15.474Z"
+      }
+  ],
+  "required": [
+      "name",
+      "job",
+      "email",
+      "id",
+      "createdAt"
+  ],
+  "properties": {
+      "name": {
+          "type": "string",
+          "title": "The name schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+              "Leonardo"
+          ]
+      },
+      "job": {
+          "type": "string",
+          "title": "The job schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+              "Programmer I"
+          ]
+      },
+      "email": {
+          "type": "string",
+          "title": "The email schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+              "example@email.com"
+          ]
+      },
+      "id": {
+          "type": "string",
+          "title": "The id schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+              "396"
+          ]
+      },
+      "createdAt": {
+          "type": "string",
+          "title": "The createdAt schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+              "2020-11-10T19:07:15.474Z"
+          ]
+      }
+  },
+  "additionalProperties": true
+}
